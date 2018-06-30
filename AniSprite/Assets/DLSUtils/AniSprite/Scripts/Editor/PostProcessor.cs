@@ -7,6 +7,7 @@ namespace DLSUtils.AniSprite.Editor
     {
         void OnPostprocessSprites(Texture2D texture, Sprite[] sprites)
         {
+            PostProcesserUI.ShowUIWithData(texture,sprites);
             Debug.Log("Got a callback on Sprites PP");
         }
 
