@@ -13,6 +13,7 @@ namespace DLSUtils.AniSprite.Editor
 
         void OnPostprocessTexture(Texture2D texture)
         {
+            Debug.Log("The PATH is:::: " + AssetDatabase.GetAssetPath(texture));
             Debug.Log("Got a callback on Texture PP");
         }
     }
