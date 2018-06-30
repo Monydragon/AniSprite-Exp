@@ -7,14 +7,11 @@ namespace DLSUtils.AniSprite.Editor
     {
         void OnPostprocessSprites(Texture2D texture, Sprite[] sprites)
         {
-            PostProcesserUI.ShowUIWithData(texture,sprites);
-            Debug.Log("Got a callback on Sprites PP");
+            PostProcesserUI.ShowUI(texture,sprites, assetImporter as TextureImporter);
         }
 
         void OnPostprocessTexture(Texture2D texture)
         {
-            Debug.Log("The PATH is:::: " + AssetDatabase.GetAssetPath(texture));
-            Debug.Log("Got a callback on Texture PP");
         }
     }
 }
